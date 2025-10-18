@@ -1,0 +1,130 @@
+.clearance-page {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  background: linear-gradient(180deg, #0a0f24, #182848);
+  color: white;
+  width: 260px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar button {
+  background: none;
+  border: none;
+  color: white;
+  text-align: left;
+  padding: 10px 15px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.sidebar button:hover,
+.sidebar button.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+footer {
+  font-size: 12px;
+  text-align: center;
+  color: #999;
+}
+
+/* Main Area */
+.form-area {
+  flex: 1;
+  background-color: #f4f7fc;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+.form-card h1 {
+  color: #0d47a1;
+  margin-bottom: 5px;
+}
+
+.form-card p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Status Table */
+.status-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.status-table th,
+.status-table td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.status-table th {
+  background-color: #003366;
+  color: white;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+}
+
+.status.cleared {
+  background-color: #28a745;
+}
+
+.status.pending {
+  background-color: #ff9800;
+}
+
+.status.na {
+  background-color: #9e9e9e;
+}
+
+.status-summary {
+  background-color: #eef3fa;
+  padding: 15px;
+  border-radius: 8px;
+  color: #333;
+  font-size: 15px;
+}
+
+.cleared-text {
+  color: #007bff;
+  font-weight: bold;
+}
